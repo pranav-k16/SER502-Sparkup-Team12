@@ -1,16 +1,35 @@
-#SER502-Sparkup-Team12
-Overview
-Sparkup is a simple, custom-designed programming language that supports basic data types (Booleans, numbers, strings), conditional logic, looping structures, and variable assignments. The goal of Sparkup is to provide an easy-to-use language that demonstrates core concepts of programming language design and execution, including lexical analysis, parsing, and runtime evaluation.
+# SER502-Sparkup-Team12
 
-Sparkup offers support for common programming constructs, including Boolean logic (AND, OR, NOT), arithmetic operations (addition, subtraction, multiplication, division), conditional statements (ternary operator and traditional if-else), loops (for and while loops), and print statements for all supported data types.
+## Overview
+**Sparkup** is a lightweight, custom-designed programming language created to support fundamental data types (Booleans, integers, floats, and strings), conditional logic, looping constructs, and variable assignments. It provides a straightforward platform for understanding key principles of programming language design and execution.
 
-Sparkup is designed with educational purposes in mind, making it an ideal tool for learning programming language design and implementation.
+The main features of **Sparkup** include:
 
-System Requirements
-Supported Platforms: Linux, MacOS, Windows
-Tools Required:
-Flex for lexical analysis
-Bison for parsing
-GCC or any C/C++ compiler for compiling the Sparkup runtime
-Make for building the project
+- **Primitive Data Types**: Booleans, integers, floats, and strings.
+- **Boolean Operators**: AND, OR, NOT.
+- **Arithmetic Operators**: Addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`).
+- **Relational Operators**: Greater than (`>`), less than (`<`), equals (`==`), and not equals (`!=`).
+- **Conditional Constructs**: Ternary operator (`condition ? value_true : value_false`) and traditional `if-else` statements.
+- **Looping Constructs**: Traditional `for` and `while` loops.
+- **Print Statements**: Support for outputting all supported data types.
 
+**Sparkup** is designed for educational purposes, allowing users to explore the core aspects of programming language development, including lexical analysis, parsing, and runtime execution.
+
+## System Requirements
+To build and run the Sparkup language, the following tools and platforms are required:
+
+### Supported Platforms
+- Linux
+- MacOS
+- Windows
+
+### Tools
+- **Flex**: For lexical analysis.
+- **Bison**: For parsing.
+- **GCC** (or any C/C++ compiler): For compiling the Sparkup runtime.
+- **Make**: For automating the build process.
+
+## Installation Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/SER502-Sparkup-Team12.git
