@@ -8,6 +8,10 @@ To build and run the Sparkup language, the following tools and platforms are req
 
 ### Supported Platforms
 - Windows
+- Mac
 
 ### Tools
 - **DCG (Definite Clause Grammar)**: For defining the grammar and parsing the Sparkup language.
+- **ANTLR (ANother Tool for Language Recognition)**: For generating parsers and performing syntax analysis for the Sparkup language.
+
+
