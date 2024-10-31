@@ -15,8 +15,8 @@ def p_program(p):
     print("Program successfully parsed!")
 
 def p_components(p):
-    '''components : initialization computation END
-                  | initialization END'''
+    '''components : initialization computation FIN
+                  | initialization FIN'''
     print("Components parsed")
 
 def p_initialization(p):
@@ -67,8 +67,8 @@ def p_expression(p):
         p[0] = (p[2], p[1], p[3])  # Example tuple-based representation
 
 def p_conditional(p):
-    '''conditional : IF LPAREN expression RPAREN LBRACE computation RBRACE
-                   | IF LPAREN expression RPAREN LBRACE computation RBRACE ELSE LBRACE computation RBRACE'''
+    '''conditional : CHK LPAREN expression RPAREN LBRACE computation RBRACE
+                   | CHK LPAREN expression RPAREN LBRACE computation RBRACE ALT LBRACE computation RBRACE'''
     print("Conditional statement parsed")
 
 def p_loop(p):
