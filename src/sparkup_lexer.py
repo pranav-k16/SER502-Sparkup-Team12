@@ -1,4 +1,4 @@
-Lexer: import ply.lex as lex
+import ply.lex as lex
 
 # List of token names
 tokens = (
