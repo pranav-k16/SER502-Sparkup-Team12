@@ -3,7 +3,7 @@ import ply.lex as lex
 # List of token names
 tokens = (
     'INT', 'FLOAT', 'STRING', 'BOOL',
-    'LET', 'PRINT', 'IF', 'ELSE', 'WHILE', 'FOR', 'END',
+    'LET', 'PRINT', 'CHK', 'ALT', 'WHILE', 'FOR', 'FIN',
     'IDENTIFIER',
     'PLUS', 'MINUS', 'MULT', 'DIV',
     'EQUAL', 'NOTEQUAL', 'LESSTHAN', 'GREATERTHAN', 'LEQ', 'GEQ',
@@ -14,11 +14,11 @@ tokens = (
 reserved = {
     'let': 'LET',
     'print': 'PRINT',   
-    'if': 'IF',
-    'else': 'ELSE',
+    'if': 'CHK',
+    'else': 'ALT',
     'while': 'WHILE',
     'for': 'FOR',
-    'end': 'END',
+    'end': 'FIN',
     'true': 'BOOL',
     'false': 'BOOL'
 }
@@ -78,4 +78,4 @@ def t_error(t):
     t.lexer.skip(1)
 
 # Build the lexer
-lexer = lex.lex()
+lexer = lex.lex()
