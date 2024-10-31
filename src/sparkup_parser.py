@@ -1,7 +1,7 @@
 import ply.yacc as yacc
 from sparkup_lexer import tokens
 
-# Define precedence rules (optional, if needed)
+# Defining precedence rules 
 precedence = (
     ('left', 'PLUS', 'MINUS'),
     ('left', 'MULT', 'DIV'),
@@ -83,5 +83,5 @@ def p_error(p):
     else:
         print("Syntax error at EOF")
 
-# Build the parser
+# Building the parser
 parser = yacc.yacc()
