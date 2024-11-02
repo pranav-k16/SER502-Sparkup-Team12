@@ -14,11 +14,11 @@ tokens = (
 reserved = {
     'let': 'LET',
     'print': 'PRINT',   
-    'if': 'CHK',
-    'else': 'ALT',
+    'chk': 'CHK',
+    'alt': 'ALT',
     'while': 'WHILE',
     'for': 'FOR',
-    'end': 'FIN',
+    'fin': 'FIN',
     'true': 'BOOL',
     'false': 'BOOL'
 }
@@ -45,7 +45,7 @@ t_COLON = r':'
 
 # Regular expressions for literals
 def t_IDENTIFIER(t):
-    r'[a-z][a-z0-9]*'
+    r'[a-zA-Z_][a-zA-Z0-9_]*'
     t.type = reserved.get(t.value, 'IDENTIFIER')
     return t
 
