@@ -1,7 +1,7 @@
 import ply.yacc as yacc
 from sparkup_lexer import tokens
 
-# Defining precedence rules 
+# Defining precedence rules
 precedence = (
     ('left', 'PLUS', 'MINUS'),
     ('left', 'MULT', 'DIV'),
@@ -11,17 +11,27 @@ precedence = (
 
 # Grammar rules
 def p_program(p):
-    'program : components'
+    '''program : components FIN
+               | components'''
+    p[0] = "Parsed successfully"  
     print("Program successfully parsed!")
 
+
 def p_components(p):
-    '''components : initialization computation FIN
-                  | initialization FIN'''
+    '''components : initialization computation
+                  | initialization'''
     print("Components parsed")
 
 def p_initialization(p):
-    'initialization : LET IDENTIFIER ASSIGN expression'
-    print(f"Initialization: {p[2]} = {p[4]}")
+    'initialization : LET variable_type IDENTIFIER ASSIGN expression'
+    print(f"Initialization: {p[3]} = {p[5]}")
+
+def p_variable_type(p):
+    '''variable_type : IDENTIFIER'''
+    if p[1] in {'int', 'float', 'str', 'bool'}:
+        p[0] = p[1]
+    else:
+        raise ValueError(f"Unknown variable type '{p[1]}'")
 
 def p_computation(p):
     '''computation : statement computation
@@ -33,7 +43,7 @@ def p_statement(p):
                  | assignment
                  | conditional
                  | loop
-                 | initialization'''  # Add initialization to statement
+                 | initialization'''
     print("Statement parsed")
 
 def p_print_statement(p):
@@ -64,7 +74,7 @@ def p_expression(p):
     if len(p) == 2:
         p[0] = p[1]
     elif len(p) == 4:
-        p[0] = (p[2], p[1], p[3])  # Example tuple-based representation
+        p[0] = (p[2], p[1], p[3])
 
 def p_conditional(p):
     '''conditional : CHK LPAREN expression RPAREN LBRACE computation RBRACE
