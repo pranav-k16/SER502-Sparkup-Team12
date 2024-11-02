@@ -1,0 +1,20 @@
+let int a = 2
+let int b = 5
+let int sum
+let int sub
+let int mul
+let int div
+
+sum = a + b
+print(sum)
+
+sub = a - b
+print(sub)
+
+mul = a * b
+print(mul)
+
+div = b / a
+print(div)
+
+fin
