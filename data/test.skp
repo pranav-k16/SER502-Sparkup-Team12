@@ -1,0 +1,69 @@
+import sys
+from sparkup_lexer import lexer
+from sparkup_parser import parser
+
+# Sample Sparkup codes
+sample_code = '''
+let int x = 10
+let int y = 20
+
+sum = x + y
+print(sum)
+
+diff = x - y
+print(diff)
+
+product = x * y
+print(product)
+
+quotient = x / y
+print(quotient)
+
+chk (x < y) {
+    print("x is less than y")
+} alt {
+    print("x is not less than y")
+}
+
+let int counter = 0
+while (counter < 5) {
+    print(counter)
+    counter = counter + 1
+}
+
+for (let int i = 0; i < 10; i = i + 1) {
+    print(i)
+}
+fin
+'''
+
+
+# Function to load code from a .skp file
+def load_skp_file(filename):
+    if not filename.endswith('.skp'):
+        raise ValueError("Invalid file extension. Please use a .skp file.")
+    with open(filename, 'r') as file:
+        code = file.read()
+    return code
+
+if __name__ == "__main__":
+    if len(sys.argv) == 2:
+        filename = sys.argv[1]
+        try:
+            code = load_skp_file(filename)
+        except Exception as e:
+            print(f"Error: {e}")
+            sys.exit(1)
+    else:
+        code = sample_code
+
+    # Tokenizing the input
+    lexer.input(code)
+    for token in lexer:
+        pass  
+
+    # Parsing the input code
+    if parser.parse(code):
+        print("Parsed successfully.")
+    else:
+        print("Parsing failed.")
