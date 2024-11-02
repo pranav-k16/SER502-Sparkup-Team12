@@ -1,1 +1,36 @@
+# Contribution Report for Sparkup Project - Milestone 02
+# Team Members: Pranav Kumar Jalagam, Naga Durga Amarnadh Reddy Dodda, Mokshith Sai Gadela, Harish Bandlamudi
 
+## Pranav Kumar Jalagam - Lexer and Tokenization
+- Responsibilities:
+  - Developed the core lexer functionality, defining token types, reserved keywords, and regular expressions for Sparkup literals.
+- Contributions:
+  - Created rules for integer, float, string, and boolean literals and implemented error handling for unrecognized tokens.
+  - Conducted initial tests to verify tokenization accuracy with sample Sparkup code.
+
+## Naga Durga Amarnadh Reddy Dodda - Grammar and Parsing
+- Responsibilities:
+  - Defined core grammar rules for variable declarations, assignments, print statements, and conditionals.
+- Contributions:
+  - Designed and tested grammar rules for arithmetic and logical expressions with attention to operator precedence.
+  - Implemented initial structure for parsing conditionals and computation blocks.
+
+## Mokshith Sai Gadela - Parse Tree and Conditional Logic
+- Responsibilities:
+  - Established Parse Tree for expressions and control flow, integrating with parser output.
+- Contributions:
+  - Created parse tree nodes for logical and arithmetic expressions, ensuring consistency with Sparkup grammar.
+  - Developed and validated conditional parsing (`chk` and `alt`).
+
+## Harish Bandlamudi - Loops and Testing
+- Responsibilities:
+  - Implemented loop constructs (for and while) within the parser.
+- Contributions:
+  - Created and tested loop structures, handling edge cases and integrating with the parse tree.
+  - Documented test cases and debugged loop scenarios to validate parser behavior.
+
+# Final Milestone Focus Areas
+- Pranav Kumar Jalagam: Extend lexer capabilities and add detailed debugging support.
+- Naga Durga Amarnadh Reddy Dodda: Optimize grammar and parsing for complex structures.
+- Mokshith Sai Gadela: Generated Parse Tree and enhanced conditional logic handling.
+- Harish Bandlamudi: Finalize loop integration and conduct thorough testing.
