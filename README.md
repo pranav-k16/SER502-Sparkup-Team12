@@ -28,7 +28,7 @@ To run Sparkup, you need Python and ply 3.11
    python -m pip install ply==3.11
    
 3.Set up an alias to run .skp files easily:
-alias skp="python3 data/test.skp"
+alias skp="python3 /path/to/SER502-Sparkup-Team12/src/runner.py"
 
 4.Now, you can run the code with:
 ```bash
