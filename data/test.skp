@@ -1,16 +1,20 @@
 let int x = 10
 let int y = 20
 
-sum = x + y
+let int sum = x + y
+print("Sum of x and y:")
 print(sum)
 
-diff = x - y
+let int diff = x - y
+print("Difference between x and y:")
 print(diff)
 
-product = x * y
+let int product = x * y
+print("Product of x and y:")
 print(product)
 
-quotient = x / y
+let float quotient = 15.5 / x
+print("Quotient of 15.5 divided by x:")
 print(quotient)
 
 chk (x < y) {
@@ -21,11 +25,37 @@ chk (x < y) {
 
 let int counter = 0
 while (counter < 5) {
+    print("Counter value:")
     print(counter)
     counter = counter + 1
 }
 
-for (let int i = 0; i < 10; i = i + 1) {
+
+let bool is_x_greater = x > y
+print("Is x greater than y?")
+print(is_x_greater)
+
+let bool are_equal = x == y
+print("Are x and y equal?")
+print(are_equal)
+
+
+for (let int i = 10; i >= 0; i = i - 2) {
+    print("Countdown value:")
     print(i)
 }
-fin
+
+let str greeting = "Hello, Sparkup!"
+print("Greeting message:")
+print(greeting)
+
+let str farewell = "Goodbye, Sparkup!"
+print("Farewell message:")
+print(farewell)
+
+
+
+
+
+
+
