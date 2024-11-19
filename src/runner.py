@@ -88,7 +88,7 @@ def load_skp_file(filename):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: skp <filename.skp>")
+        print("Usage: skp data/test.skp")
         sys.exit(1)
 
     filename = sys.argv[1]
