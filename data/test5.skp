@@ -1,0 +1,13 @@
+let int x = 45
+let int y = 45
+
+
+let bool is_x_greater = x > y
+print("Is x greater than y?")
+print(is_x_greater)
+
+let bool are_equal = x == y
+print("Are x and y equal?")
+print(are_equal)
+
+fin
