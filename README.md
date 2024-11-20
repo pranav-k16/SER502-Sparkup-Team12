@@ -38,7 +38,7 @@ To run Sparkup, you need Python and ply 3.11
    ```bash
    alias skp="python ~/<Path to your project>/SER502-Sparkup-Team12/src/runner.py"
 
-   Exampkle: alias skp="python ~/Desktop/SER502-Sparkup-Team12/src/runner.py"
+   Example: alias skp="python ~/Desktop/SER502-Sparkup-Team12/src/runner.py"
    
 5. Now, you can run the code with:
    ```bash
