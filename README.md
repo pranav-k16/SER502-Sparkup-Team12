@@ -48,7 +48,7 @@ skp data/<filename.skp>
 4. To set up a standalone command, create a batch file (e.g., `skp.bat`) in the project directory with the following content:
    ```batch
    @echo off
-   python test_skp.py %1
+   python test.skp %1
    ```
    
 5. Now, you can execute the Sparkup code using:
