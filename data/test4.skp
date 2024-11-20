@@ -1,0 +1,16 @@
+let int x = 5
+let int z = 0
+
+print("Starting while loop:")
+
+while (x > 0) {
+    z = x * 5
+    print("Value of z:")
+    print(z)
+    x = x - 1
+}
+
+print("Final value of x:")
+print(x)
+
+fin
