@@ -96,7 +96,8 @@ def p_expression(p):
                   | expression AND expression
                   | expression OR expression
                   | NOT expression
-                  | LPAREN expression RPAREN'''
+                  | LPAREN expression RPAREN
+                  | expression QUESTION expression COLON expression'''
     if len(p) == 2:  # Literal or identifier
         p[0] = p[1]
     elif len(p) == 4:  # Binary operation or parentheses
@@ -106,6 +107,8 @@ def p_expression(p):
             p[0] = (p[2], p[1], p[3])
     elif len(p) == 3:  # Logical NOT operation
         p[0] = ('not', p[2])
+    elif len(p) == 6:  # Ternary operator
+        p[0] = ('ternary', p[1], p[3], p[5])
 
 
 def p_error(p):
