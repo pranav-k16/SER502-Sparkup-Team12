@@ -1,0 +1,10 @@
+let int x = 35
+let int y = 15
+
+chk (x < y) {
+    print("x is less than y")
+} alt {
+    print("y is less than x")
+}
+
+fin
