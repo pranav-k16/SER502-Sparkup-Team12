@@ -108,7 +108,6 @@ def p_expression(p):
         p[0] = ('not', p[2])
 
 
-
 def p_error(p):
     if p:
         print(f"Syntax error at '{p.value}', line {p.lineno}")
@@ -117,3 +116,4 @@ def p_error(p):
 
 # Build the parser
 parser = yacc.yacc()
+
