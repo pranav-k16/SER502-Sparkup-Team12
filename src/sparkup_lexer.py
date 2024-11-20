@@ -7,20 +7,24 @@ tokens = (
     'IDENTIFIER',
     'PLUS', 'MINUS', 'MULT', 'DIV',
     'EQUAL', 'NOTEQUAL', 'LESSTHAN', 'GREATERTHAN', 'LEQ', 'GEQ',
-    'ASSIGN', 'LPAREN', 'RPAREN', 'LBRACE', 'RBRACE', 'SEMI', 'QUESTION', 'COLON',
+    'ASSIGN', 'LPAREN', 'RPAREN', 'LBRACE', 'RBRACE', 'SEMI', 'QUESTION', 'COLON','AND', 'OR', 'NOT',
 )
 
 # Reserved words
 reserved = {
     'let': 'LET',
-    'print': 'PRINT',   
+    'print': 'PRINT',
     'chk': 'CHK',
     'alt': 'ALT',
     'while': 'WHILE',
     'for': 'FOR',
     'fin': 'FIN',
     'true': 'BOOL',
-    'false': 'BOOL'
+    'false': 'BOOL',
+    'float': 'IDENTIFIER',  
+    'int': 'IDENTIFIER',    
+    'bool': 'IDENTIFIER',
+    'str': 'IDENTIFIER'
 }
 
 # Regular expression rules for tokens
@@ -42,6 +46,9 @@ t_RBRACE = r'\}'
 t_SEMI = r';'
 t_QUESTION = r'\?'
 t_COLON = r':'
+t_AND = r'and'
+t_OR = r'or'
+t_NOT = r'not'
 
 # Regular expressions for literals
 def t_IDENTIFIER(t):
@@ -49,14 +56,14 @@ def t_IDENTIFIER(t):
     t.type = reserved.get(t.value, 'IDENTIFIER')
     return t
 
-def t_INT(t):
-    r'\d+'
-    t.value = int(t.value)
-    return t
-
 def t_FLOAT(t):
     r'\d+\.\d+'
     t.value = float(t.value)
+    return t
+
+def t_INT(t):
+    r'\d+'
+    t.value = int(t.value)
     return t
 
 def t_STRING(t):
