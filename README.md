@@ -31,14 +31,20 @@ To run Sparkup, you need Python and ply 3.11
 3. Navigate to your Sparkup Project Directory:Replace <Path to your project> with the actual path to your project directory
    ```bash
    cd ~/<Path to your project>/SER502-Sparkup-Team12
+
+   Example:cd ~/Desktop/SER502-Sparkup-Team12
    
 4. Set Up an Alias: Create a temporary alias for running .skp files using the runner script. Replace <Path to your project> with the path to your project directory
    ```bash
    alias skp="python ~/<Path to your project>/SER502-Sparkup-Team12/src/runner.py"
+
+   Exampkle: alias skp="python ~/Desktop/SER502-Sparkup-Team12/src/runner.py"
    
 5. Now, you can run the code with:
    ```bash
    skp data/<filename.skp>
+
+   Example: skp data/test2.skp
    ```
 
 ### Installation on Windows
