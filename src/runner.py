@@ -16,7 +16,13 @@ def evaluate_expression(expression):
     """Evaluate an expression recursively."""
     if isinstance(expression, tuple):  # Binary or ternary operation
         op = expression[0]
-        if op in ('+', '-', '*', '/', '<', '>', '<=', '>=', '==', '!='):
+        if op == 'ternary':  # Ternary operator
+            condition = evaluate_expression(expression[1])
+            if condition:
+                return evaluate_expression(expression[2])
+            else:
+                return evaluate_expression(expression[3])
+        elif op in ('+', '-', '*', '/', '<', '>', '<=', '>=', '==', '!='):
             left_val = evaluate_expression(expression[1])
             right_val = evaluate_expression(expression[2])
             if op == '+':
