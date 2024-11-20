@@ -45,7 +45,7 @@ skp data/<filename.skp>
    ```cmd
    python -m pip install ply==3.11
    ```
-4.To execute the Sparkup code, use the following command:
+4. To execute the Sparkup code, use the following command:
    ```cmd
    python src/runner.py data/test.skp
    ```
