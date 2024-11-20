@@ -1,0 +1,18 @@
+let int start = 1
+let int end = 5
+
+print("Starting For Loop:")
+for (let int i = start; i < end; i = i + 1) {
+    print("Value in for loop:")
+    print(i)
+}
+
+print("Starting While Loop:")
+let int counter = end
+while (counter < 8) {
+    print("Value in while loop:")
+    print(counter)
+    counter = counter + 1
+}
+
+fin
