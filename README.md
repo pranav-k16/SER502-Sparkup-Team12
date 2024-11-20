@@ -22,15 +22,17 @@ To build and run the Sparkup language, the following tools and platforms are req
 To run Sparkup, you need Python and ply 3.11
 
 ### Installation on Linux & Mac
-1. Open a terminal and navigate to your Sparkup project directory.
+1. Open a terminal.
 2. Install the required `ply` library:
    ```bash
    python -m pip install ply==3.11
-   
-3.Set up an alias to run .skp files easily:
-alias skp="python3 /path/to/SER502-Sparkup-Team12/src/runner.py"
-
-4.Now, you can run the code with:
+3.Navigate to your Sparkup Project Directory:Replace <Path to your project> with the actual path to your project directory
+  ```bash
+   cd ~/<Path to your project>/SER502-Sparkup-Team12
+4. Set Up an Alias: Create a temporary alias for running .skp files using the runner script. Replace <Path to your project> with the path to your project directory
+   ```bash
+   alias skp="python ~/<Path to your project>/SER502-Sparkup-Team12/src/runner.py"
+5.Now, you can run the code with:
 ```bash
 skp data/<filename.skp>
 ```
