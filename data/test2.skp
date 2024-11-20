@@ -1,0 +1,11 @@
+let int x = 5
+let int y = 15
+
+let int product = x * y
+print("Product of x and y:")
+print(product)
+
+let float quotient = 15.5 / x
+print("Quotient of 15.5 divided by x:")
+print(quotient)
+
