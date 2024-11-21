@@ -1,0 +1,9 @@
+let str greeting = "Hello, Sparkup!"
+print("Greeting message:")
+print(greeting)
+
+let str farewell = "Goodbye, Sparkup!"
+print("Farewell message:")
+print(farewell)
+
+fin
