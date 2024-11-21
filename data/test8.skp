@@ -1,0 +1,17 @@
+let int x = 0
+let int y = 5
+
+while (x < y) {
+    print("x value:")
+    print(x)
+
+    chk (x < 3) {
+        print("x is less than 3")
+    } alt {
+        print("x is greater than or equal to 3")
+    }
+
+    x = x + 1
+}
+
+print("While loop completed.")
