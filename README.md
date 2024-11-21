@@ -53,6 +53,7 @@ To run Sparkup, you need Python and ply 3.11
    ```cmd
    cd path\to\your\project
    ```
+   Example: cd .\project\SER502-Sparkup-Team12-main
 3. Install the PLY library:
    ```cmd
    python -m pip install ply==3.11
