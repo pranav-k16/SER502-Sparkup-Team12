@@ -1,36 +1,44 @@
-# Contribution Report for Sparkup Project - Milestone 02
+# Contribution Report for Sparkup Project - Milestone 04
 # Team Members: Pranav Kumar Jalagam, Naga Durga Amarnadh Reddy Dodda, Mokshith Sai Gadela, Harish Bandlamudi
 
-## Pranav Kumar Jalagam - Lexer and Tokenization
+## Pranav Kumar Jalagam - Lexer, Tokenization, and Runtime Environment
 - Responsibilities:
-  - Developed the core lexer functionality, defining token types, reserved keywords, and regular expressions for Sparkup literals.
+  - Extended the lexer functionality to cover additional operators and debugging support.
+  - Worked on integrating the runtime environment to execute the parse tree.
 - Contributions:
-  - Created rules for integer, float, string, and boolean literals and implemented error handling for unrecognized tokens.
-  - Conducted initial tests to verify tokenization accuracy with sample Sparkup code.
+  - Added support for additional operators (ternary and logical) to the lexer.
+  - Implemented error handling improvements for invalid characters and unclosed strings.
+  - Integrated runtime functionality to interpret and execute the parse tree.
 
-## Naga Durga Amarnadh Reddy Dodda - Grammar and Parsing
+## Naga Durga Amarnadh Reddy Dodda - Grammar, Parsing, and Parse Tree Generation
 - Responsibilities:
-  - Defined core grammar rules for variable declarations, assignments, print statements, and conditionals.
+  - Enhanced grammar rules to support complete language constructs including loops and nested conditionals.
+  - Worked on refining parse tree generation for complex expressions.
 - Contributions:
-  - Designed and tested grammar rules for arithmetic and logical expressions with attention to operator precedence.
-  - Implemented initial structure for parsing conditionals and computation blocks.
+  - Optimized grammar to handle nested structures (loops and conditionals) with improved error handling.
+  - Refined parse tree representation for clarity and ease of traversal in the runtime environment.
+  - Conducted tests on parsing edge cases to ensure grammar stability and robustness.
 
-## Mokshith Sai Gadela - Parse Tree and Conditional Logic
+## Mokshith Sai Gadela - Parse Tree, Conditional Logic, and Intermediate Representation
 - Responsibilities:
-  - Established Parse Tree for expressions and control flow, integrating with parser output.
+  - Finalized parse tree structure and implemented intermediate code generation.
+  - Enhanced conditional logic parsing for seamless integration with the runtime environment.
 - Contributions:
-  - Created parse tree nodes for logical and arithmetic expressions, ensuring consistency with Sparkup grammar.
-  - Developed and validated conditional parsing (`chk` and `alt`).
+  - Developed intermediate representations for conditional constructs (`chk` and `alt`) and loops.
+  - Ensured accurate parse tree traversal and transformation to intermediate code.
+  - Conducted debugging and validations to guarantee correct execution of sample programs.
 
-## Harish Bandlamudi - Loops and Testing
+## Harish Bandlamudi - Loop Constructs, Testing, and Runtime Execution
 - Responsibilities:
-  - Implemented loop constructs (for and while) within the parser.
+  - Finalized and tested loop constructs, ensuring proper runtime execution.
+  - Validated the integration of the runtime environment with the parser.
 - Contributions:
-  - Created and tested loop structures, handling edge cases and integrating with the parse tree.
-  - Documented test cases and debugged loop scenarios to validate parser behavior.
+  - Implemented loop execution mechanisms (for and while) in the runtime environment.
+  - Developed comprehensive test cases for all language features, focusing on edge cases.
+  - Conducted final debugging sessions to ensure parser and runtime consistency.
 
-# Final Milestone Focus Areas
-- Pranav Kumar Jalagam: Extend lexer capabilities and add detailed debugging support.
-- Naga Durga Amarnadh Reddy Dodda: Optimize grammar and parsing for complex structures.
-- Mokshith Sai Gadela: Generated Parse Tree and enhanced conditional logic handling.
-- Harish Bandlamudi: Finalize loop integration and conduct thorough testing.
+# Final Submission Focus Areas
+- Pranav Kumar Jalagam: Enhanced lexer and runtime error reporting.
+- Naga Durga Amarnadh Reddy Dodda: Completed grammar and parsing optimization.
+- Mokshith Sai Gadela: Finalized intermediate representation and parse tree traversal.
+- Harish Bandlamudi: Tested and validated runtime execution for sample programs.
